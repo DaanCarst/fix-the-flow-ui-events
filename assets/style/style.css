@@ -39,6 +39,75 @@ a:hover {
 
 /* UI Event Classes */
 
+a:nth-of-type(1) {
+  position: relative;
+  background: red;
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+a:nth-of-type(2) {
+  position: relative;
+  background: burlywood;
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+a:nth-of-type(3) {
+  position: relative;
+  background: goldenrod;
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+a:nth-of-type(4) {
+  position: relative;
+  background: blueviolet;
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+a:nth-of-type(5) {
+  position: relative;
+  background: yellow;
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+a:nth-of-type(6) {
+  position: relative;
+  background: hotpink;
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+a:nth-of-type(7) {
+  position: relative;
+  background: paleturquoise;
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+a:nth-of-type(8) {
+  position: relative;
+  background: firebrick;
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+a:nth-of-type(9) {
+  position: relative;
+  background: khaki;
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+a:nth-of-type(10) {
+  position: relative;
+  background: lightcoral;
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
 /* Jump animation on the interaction link */
 a:nth-of-type(12) {
   position: relative;
@@ -79,3 +148,231 @@ a:nth-of-type(12) {
 }
 
 /* Jouw animaties */
+
+.enlarge {
+  animation-name: enlarge;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes enlarge {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}
+
+.rotate {
+  animation-name: rotate;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  25% {
+    transform: rotate3d(0, 0, 1, 90deg);
+  }
+  50% {
+    transform: rotate3d(0, 0, 1, 180deg);
+  }
+  75% {
+    transform: rotate3d(0, 0, 1, 270deg);
+  }
+  100% {
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
+}
+
+.updownleftright {
+  animation-name: updownleftright;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+@keyframes updownleftright {
+  0% {
+    transform: translateY(0rem);
+  }
+  10% {
+    transform: translateY(-2rem);
+  }
+  20% {
+    transform: translateY(0rem);
+  }
+  30% {
+    transform: translateY(2rem);
+  }
+  40% {
+    transform: translateY(0rem);
+  }
+  50% {
+    transform: translatex(-2rem);
+  }
+  60% {
+    transform: translatex(0rem);
+  }
+  70% {
+    transform: translatex(2rem);
+  }
+  80% {
+    transform: translatex(0rem);
+  }
+  90% {
+    transform: translatex(0rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}
+
+.uphover {
+  animation-name: uphover;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes uphover {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  50% {
+    transform: scale(1.2, 1.2) translateY(-1rem);
+  }
+
+  55% {
+    transform: scale(1.2, 1.2) translateY(-1rem) rotate(5deg);
+  }
+
+  60% {
+    transform: scale(1.2, 1.2) translateY(-1rem) rotate(0deg);
+  }
+
+  65% {
+    transform: scale(1.2, 1.2) translateY(-1rem) rotate(-5deg);
+  }
+
+  70% {
+    transform: scale(1.2, 1.2) translateY(-1rem) rotate(0deg);
+  }
+
+  100% {
+    transform: scale(1, 1) translateY(0rem);
+  }
+}
+
+.colorswap {
+  animation-name: colorswap;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes colorswap {
+  0%   {background-color: yellow;}
+  25%  {background-color: green;}
+  50%  {background-color: purple}
+  100% {background-color: yellow;}
+}
+
+.leftrightclick {
+  animation-name: leftrightclick;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes leftrightclick {
+  0% {
+    transform: translateY(0rem);
+  }
+  25% {
+    transform: translateY(2rem);
+  }
+  75% {
+    transform: translateY(-2rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}
+
+.dock-item[data-editing="true"] {
+  animation: jiggle 0.2s infinite;
+  border: 1px solid #aaa;
+}
+
+@keyframes jiggle {
+  0% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
+.flow {
+  animation-name: flow;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: .2s;
+  animation-iteration-count: 10;
+}
+
+@keyframes flow {
+  0% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+}
+
+.touchend {
+  animation-name: touchend;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 1s;
+  animation-iteration-count: 2;
+}
+
+@keyframes touchend {
+  0%   {background-color: khaki;}
+  25%  {background-color: black;}
+  50%  {background-color: white}
+  100% {background-color: khaki;}
+}
+
+.touchstart {
+  animation-name: touchstart;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+
+@keyframes touchstart {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(359deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+
+
+
+
