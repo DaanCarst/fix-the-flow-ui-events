@@ -78,7 +78,7 @@ function flowHandler() {
   user.classList.toggle('touchend')
 }
 
-interface.addEventListener('touchend', flowHandler)
+interface.addEventListener('touchstart', flowHandler)
 interface.addEventListener('animationend', flowHandler)
 
 function flowHandler() {
