@@ -16,11 +16,11 @@ function jumpHandler() {
   interaction.classList.toggle('jump')
 }
 
-frontend.addEventListener('click', enlargeHandler)
-frontend.addEventListener('animationend', enlargeHandler)
+frontend.addEventListener('click', enlargeHandler) // het is een eventlistener wat er voor zorgt dat je wanneer je klikt op een element het die functie aanroept
+frontend.addEventListener('animationend', enlargeHandler) //Hier wordt de animatie gestopt nadat hij 1x is gekomen zodat je niet 2x hoeft te klikken.
 
 function enlargeHandler() {
-  frontend.classList.toggle('enlarge')
+  frontend.classList.toggle('enlarge') //Hier word de functie opgeroepen zodat het element een enlarge class krijgt met de goeie keyframe
 }
 
 design.addEventListener('click', rotationHandler)
